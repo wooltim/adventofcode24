@@ -1,4 +1,4 @@
-// adventofcode24.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// day1.cpp
 //
 
 #include <iostream>
@@ -10,8 +10,6 @@ int main() {
     std::vector<int> list1, list2;
     std::string line;
 
-    std::cout << "Enter pairs of integers (e.g., 'int1 int2' on each line). End with an empty line:\n";
-
     while (true) {
         std::getline(std::cin, line);
 
@@ -21,8 +19,6 @@ int main() {
 
         std::stringstream ss(line);
         int num1, num2;
-
-        // Read two integers from each line
         if (ss >> num1 >> num2) {
             list1.push_back(num1);
             list2.push_back(num2);
